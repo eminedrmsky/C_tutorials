@@ -1,0 +1,1 @@
+C:/cygwin64/bin/gcc.exe -g  -Wl,--enable-auto-import CMakeFiles/C_Tutorials.dir/DieRoll.c.o CMakeFiles/C_Tutorials.dir/ShuffleDeck.c.o  -o C_Tutorials.exe -Wl,--out-implib,libC_Tutorials.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
