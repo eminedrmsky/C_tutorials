@@ -3,6 +3,8 @@
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
       <config projectName="C_Tutorials" targetName="C_Tutorials" />
+      <config projectName="C_Tutorials" targetName="DieRoll" />
+      <config projectName="C_Tutorials" targetName="ShuffleDeck" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -11,7 +13,23 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aab71d1f-502d-4ef7-8df8-9c2c27e42d90" name="Default Changelist" comment="" />
+    <list default="true" id="aab71d1f-502d-4ef7-8df8-9c2c27e42d90" name="Default Changelist" comment="shuffling decks">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShuffleDeck.c" beforeDir="false" afterPath="$PROJECT_DIR$/ShuffleDeck.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/C_Tutorials.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/C_Tutorials.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/C_Tutorials.dir/DieRoll.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/C_Tutorials.dir/DieRoll.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/C_Tutorials.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/C_Tutorials.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/C_Tutorials.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/C_Tutorials.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/C_Tutorials.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/C_Tutorials.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/C_Tutorials.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,12 +44,13 @@
     <favorites_list name="C_Tutorials" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/C_training" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectId" id="29OBx0peLWQDSdgB7gbUUXUdK3B" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
@@ -47,12 +66,27 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="CMake Application.ShuffleDeck">
     <configuration name="C_Tutorials" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="C_Tutorials" TARGET_NAME="C_Tutorials" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="C_Tutorials" RUN_TARGET_NAME="C_Tutorials">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DieRoll" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="C_Tutorials" TARGET_NAME="DieRoll" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="C_Tutorials" RUN_TARGET_NAME="DieRoll">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShuffleDeck" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="C_Tutorials" TARGET_NAME="ShuffleDeck" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="C_Tutorials" RUN_TARGET_NAME="ShuffleDeck">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.C_Tutorials" />
+      <item itemvalue="CMake Application.DieRoll" />
+      <item itemvalue="CMake Application.ShuffleDeck" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -67,7 +101,7 @@
       <workItem from="1652974498796" duration="22228000" />
       <workItem from="1653854643153" duration="452000" />
       <workItem from="1653912800189" duration="3565000" />
-      <workItem from="1653934397915" duration="1050000" />
+      <workItem from="1653934397915" duration="7404000" />
     </task>
     <servers />
   </component>
@@ -84,5 +118,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="shuffling decks" />
+    <option name="LAST_COMMIT_MESSAGE" value="shuffling decks" />
   </component>
 </project>

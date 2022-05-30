@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named DieRoll
+
+# Build rule for target.
+DieRoll: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 DieRoll
+.PHONY : DieRoll
+
+# fast build rule for target.
+DieRoll/fast:
+	$(MAKE) -f CMakeFiles/DieRoll.dir/build.make CMakeFiles/DieRoll.dir/build
+.PHONY : DieRoll/fast
+
+#=============================================================================
 # Target rules for targets named C_Tutorials
 
 # Build rule for target.
@@ -123,12 +136,26 @@ C_Tutorials/fast:
 	$(MAKE) -f CMakeFiles/C_Tutorials.dir/build.make CMakeFiles/C_Tutorials.dir/build
 .PHONY : C_Tutorials/fast
 
+#=============================================================================
+# Target rules for targets named ShuffleDeck
+
+# Build rule for target.
+ShuffleDeck: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ShuffleDeck
+.PHONY : ShuffleDeck
+
+# fast build rule for target.
+ShuffleDeck/fast:
+	$(MAKE) -f CMakeFiles/ShuffleDeck.dir/build.make CMakeFiles/ShuffleDeck.dir/build
+.PHONY : ShuffleDeck/fast
+
 DieRoll.o: DieRoll.c.o
 
 .PHONY : DieRoll.o
 
 # target to build an object file
 DieRoll.c.o:
+	$(MAKE) -f CMakeFiles/DieRoll.dir/build.make CMakeFiles/DieRoll.dir/DieRoll.c.o
 	$(MAKE) -f CMakeFiles/C_Tutorials.dir/build.make CMakeFiles/C_Tutorials.dir/DieRoll.c.o
 .PHONY : DieRoll.c.o
 
@@ -138,6 +165,7 @@ DieRoll.i: DieRoll.c.i
 
 # target to preprocess a source file
 DieRoll.c.i:
+	$(MAKE) -f CMakeFiles/DieRoll.dir/build.make CMakeFiles/DieRoll.dir/DieRoll.c.i
 	$(MAKE) -f CMakeFiles/C_Tutorials.dir/build.make CMakeFiles/C_Tutorials.dir/DieRoll.c.i
 .PHONY : DieRoll.c.i
 
@@ -147,6 +175,7 @@ DieRoll.s: DieRoll.c.s
 
 # target to generate assembly for a file
 DieRoll.c.s:
+	$(MAKE) -f CMakeFiles/DieRoll.dir/build.make CMakeFiles/DieRoll.dir/DieRoll.c.s
 	$(MAKE) -f CMakeFiles/C_Tutorials.dir/build.make CMakeFiles/C_Tutorials.dir/DieRoll.c.s
 .PHONY : DieRoll.c.s
 
@@ -157,6 +186,7 @@ ShuffleDeck.o: ShuffleDeck.c.o
 # target to build an object file
 ShuffleDeck.c.o:
 	$(MAKE) -f CMakeFiles/C_Tutorials.dir/build.make CMakeFiles/C_Tutorials.dir/ShuffleDeck.c.o
+	$(MAKE) -f CMakeFiles/ShuffleDeck.dir/build.make CMakeFiles/ShuffleDeck.dir/ShuffleDeck.c.o
 .PHONY : ShuffleDeck.c.o
 
 ShuffleDeck.i: ShuffleDeck.c.i
@@ -166,6 +196,7 @@ ShuffleDeck.i: ShuffleDeck.c.i
 # target to preprocess a source file
 ShuffleDeck.c.i:
 	$(MAKE) -f CMakeFiles/C_Tutorials.dir/build.make CMakeFiles/C_Tutorials.dir/ShuffleDeck.c.i
+	$(MAKE) -f CMakeFiles/ShuffleDeck.dir/build.make CMakeFiles/ShuffleDeck.dir/ShuffleDeck.c.i
 .PHONY : ShuffleDeck.c.i
 
 ShuffleDeck.s: ShuffleDeck.c.s
@@ -175,6 +206,7 @@ ShuffleDeck.s: ShuffleDeck.c.s
 # target to generate assembly for a file
 ShuffleDeck.c.s:
 	$(MAKE) -f CMakeFiles/C_Tutorials.dir/build.make CMakeFiles/C_Tutorials.dir/ShuffleDeck.c.s
+	$(MAKE) -f CMakeFiles/ShuffleDeck.dir/build.make CMakeFiles/ShuffleDeck.dir/ShuffleDeck.c.s
 .PHONY : ShuffleDeck.c.s
 
 # Help Target
@@ -184,8 +216,10 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... C_Tutorials"
+	@echo "... DieRoll"
 	@echo "... edit_cache"
+	@echo "... C_Tutorials"
+	@echo "... ShuffleDeck"
 	@echo "... DieRoll.o"
 	@echo "... DieRoll.i"
 	@echo "... DieRoll.s"

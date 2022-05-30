@@ -65,6 +65,43 @@ CMAKE_SOURCE_DIR = /cygdrive/d/Github_Projeler/C_Tutorials
 CMAKE_BINARY_DIR = /cygdrive/d/Github_Projeler/C_Tutorials/cmake-build-debug
 
 #=============================================================================
+# Target rules for target CMakeFiles/DieRoll.dir
+
+# All Build rule for target.
+CMakeFiles/DieRoll.dir/all:
+	$(MAKE) -f CMakeFiles/DieRoll.dir/build.make CMakeFiles/DieRoll.dir/depend
+	$(MAKE) -f CMakeFiles/DieRoll.dir/build.make CMakeFiles/DieRoll.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/d/Github_Projeler/C_Tutorials/cmake-build-debug/CMakeFiles --progress-num=4,5 "Built target DieRoll"
+.PHONY : CMakeFiles/DieRoll.dir/all
+
+# Include target in all.
+all: CMakeFiles/DieRoll.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/DieRoll.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/d/Github_Projeler/C_Tutorials/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/DieRoll.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/d/Github_Projeler/C_Tutorials/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/DieRoll.dir/rule
+
+# Convenience name for target.
+DieRoll: CMakeFiles/DieRoll.dir/rule
+
+.PHONY : DieRoll
+
+# clean rule for target.
+CMakeFiles/DieRoll.dir/clean:
+	$(MAKE) -f CMakeFiles/DieRoll.dir/build.make CMakeFiles/DieRoll.dir/clean
+.PHONY : CMakeFiles/DieRoll.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/DieRoll.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/C_Tutorials.dir
 
 # All Build rule for target.
@@ -98,6 +135,43 @@ CMakeFiles/C_Tutorials.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/C_Tutorials.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ShuffleDeck.dir
+
+# All Build rule for target.
+CMakeFiles/ShuffleDeck.dir/all:
+	$(MAKE) -f CMakeFiles/ShuffleDeck.dir/build.make CMakeFiles/ShuffleDeck.dir/depend
+	$(MAKE) -f CMakeFiles/ShuffleDeck.dir/build.make CMakeFiles/ShuffleDeck.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/d/Github_Projeler/C_Tutorials/cmake-build-debug/CMakeFiles --progress-num=6,7 "Built target ShuffleDeck"
+.PHONY : CMakeFiles/ShuffleDeck.dir/all
+
+# Include target in all.
+all: CMakeFiles/ShuffleDeck.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ShuffleDeck.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/d/Github_Projeler/C_Tutorials/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ShuffleDeck.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/d/Github_Projeler/C_Tutorials/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/ShuffleDeck.dir/rule
+
+# Convenience name for target.
+ShuffleDeck: CMakeFiles/ShuffleDeck.dir/rule
+
+.PHONY : ShuffleDeck
+
+# clean rule for target.
+CMakeFiles/ShuffleDeck.dir/clean:
+	$(MAKE) -f CMakeFiles/ShuffleDeck.dir/build.make CMakeFiles/ShuffleDeck.dir/clean
+.PHONY : CMakeFiles/ShuffleDeck.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/ShuffleDeck.dir/clean
 
 .PHONY : clean
 

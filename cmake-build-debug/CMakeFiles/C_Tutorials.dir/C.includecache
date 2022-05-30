@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/d/Github_Projeler/C_Tutorials/DieRoll.c
+/cygdrive/d/Github_Projeler/C_Tutorials/ShuffleDeck.c
 stdio.h
 -
 stdlib.h

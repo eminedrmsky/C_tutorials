@@ -27,6 +27,52 @@
 					<DistClean command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/d/Github_Projeler/C_Tutorials/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="DieRoll">
+				<Option output="/cygdrive/d/Github_Projeler/C_Tutorials/cmake-build-debug/DieRoll.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/Github_Projeler/C_Tutorials/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/d/Github_Projeler/C_Tutorials/cmake-build-debug/Makefile&quot;  VERBOSE=1 DieRoll"/>
+					<CompileFile command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/d/Github_Projeler/C_Tutorials/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/d/Github_Projeler/C_Tutorials/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/d/Github_Projeler/C_Tutorials/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="DieRoll/fast">
+				<Option output="/cygdrive/d/Github_Projeler/C_Tutorials/cmake-build-debug/DieRoll.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/Github_Projeler/C_Tutorials/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/d/Github_Projeler/C_Tutorials/cmake-build-debug/Makefile&quot;  VERBOSE=1 DieRoll/fast"/>
+					<CompileFile command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/d/Github_Projeler/C_Tutorials/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/d/Github_Projeler/C_Tutorials/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/d/Github_Projeler/C_Tutorials/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/cygdrive/d/Github_Projeler/C_Tutorials/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/d/Github_Projeler/C_Tutorials/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/d/Github_Projeler/C_Tutorials/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/d/Github_Projeler/C_Tutorials/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/d/Github_Projeler/C_Tutorials/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="C_Tutorials">
 				<Option output="/cygdrive/d/Github_Projeler/C_Tutorials/cmake-build-debug/C_Tutorials.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/cygdrive/d/Github_Projeler/C_Tutorials/cmake-build-debug"/>
@@ -63,11 +109,37 @@
 					<DistClean command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/d/Github_Projeler/C_Tutorials/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="edit_cache">
+			<Target title="ShuffleDeck">
+				<Option output="/cygdrive/d/Github_Projeler/C_Tutorials/cmake-build-debug/ShuffleDeck.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/cygdrive/d/Github_Projeler/C_Tutorials/cmake-build-debug"/>
-				<Option type="4"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
 				<MakeCommands>
-					<Build command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/d/Github_Projeler/C_Tutorials/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<Build command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/d/Github_Projeler/C_Tutorials/cmake-build-debug/Makefile&quot;  VERBOSE=1 ShuffleDeck"/>
+					<CompileFile command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/d/Github_Projeler/C_Tutorials/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/d/Github_Projeler/C_Tutorials/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/d/Github_Projeler/C_Tutorials/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ShuffleDeck/fast">
+				<Option output="/cygdrive/d/Github_Projeler/C_Tutorials/cmake-build-debug/ShuffleDeck.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/Github_Projeler/C_Tutorials/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/d/Github_Projeler/C_Tutorials/cmake-build-debug/Makefile&quot;  VERBOSE=1 ShuffleDeck/fast"/>
 					<CompileFile command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/d/Github_Projeler/C_Tutorials/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/d/Github_Projeler/C_Tutorials/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/d/Github_Projeler/C_Tutorials/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -75,10 +147,12 @@
 			</Target>
 		</Build>
 		<Unit filename="/cygdrive/d/Github_Projeler/C_Tutorials/DieRoll.c">
+			<Option target="DieRoll"/>
 			<Option target="C_Tutorials"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/Github_Projeler/C_Tutorials/ShuffleDeck.c">
 			<Option target="C_Tutorials"/>
+			<Option target="ShuffleDeck"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/Github_Projeler/C_Tutorials/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
