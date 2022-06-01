@@ -3,16 +3,26 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <math.h>
 
 void UpdateTimeSeed(void);
 void shuffleDeck(int deck[][13]);
 void dealDeck(int deck[][13], const char *suit[], const char *face[]);
-int givePokerHand(int deck[][13]);
+void givePokerHand(int deck[][13], int pokerHandOfPlayer[5]);
 void showHand(int pokerHandOfPlayer[5], const char *suit[], const char *face[]);
 
-int NumberOfCards = 52;
+//Hand valuation
+
+void isTherePair(int pokerHandOfPlayer[5]);
+void isThereKinds(int pokerHandOfPlayer[5]);
+void isThereFlush(int pokerHandOfPlayer[5]);
+void isThereStraight(int pokerHandOfPlayer[5]);
+
+int NumberOfCards = 51;
 
 void main(void){
+
+    void (*evaluationFunctions)(int) = {isTherePair, isThereKinds, isThereFlush, isThereStraight};
 
     const char *suit[] = {"Hearts", "Diamonds", "Clubs", "Spades"};
     const char *face[] = {"Ace", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine",
@@ -21,12 +31,15 @@ void main(void){
     int deck[4][13] = {0};
     int pokerHandOfPlayerOne[5] ={0};
 
+
     UpdateTimeSeed();
     shuffleDeck(deck);
     dealDeck(deck, suit, face);
 
-    *pokerHandOfPlayerOne = givePokerHand(deck);
+    givePokerHand(deck, pokerHandOfPlayerOne);
     showHand(pokerHandOfPlayerOne, suit, face);
+
+    isTherePair(pokerHandOfPlayerOne);
 
 }
 
@@ -41,7 +54,7 @@ void shuffleDeck(int deck[][13]){
     int column;
     int cardNumber;
 
-    for(cardNumber =1; cardNumber <=52; cardNumber++){
+    for(cardNumber =0; cardNumber <=NumberOfCards; cardNumber++){
         do{
             row = rand() % 4;
             column = rand() % 13;
@@ -56,30 +69,29 @@ void dealDeck(int deck[][13], const char *suit[], const char *face[]){
     int row, cardRow;
     int column, cardColumn;
 
-        for (row = 1; row<= 4; row++){
-            for (column =1 ; column <= 13; column++){
+        for (row = 0; row<= 3; row++){
+            for (column =0 ; column <= 12; column++){
             card = deck[row][column];
-            cardRow = card/13;
+            cardRow = (int)(card/13);
             cardColumn = card%13;
             printf("%5s of %-8s \n", face[cardColumn], suit[cardRow]);
             }
         }
 }
 
-int givePokerHand(int deck[][13]){
+void givePokerHand(int deck[][13], int pokerHandOfPlayer[5]){
 
     int i;
-    int PokerHand[5] ;
     int row, column;
 
-    for (i = 1; i<=5; i++) {
+    for (i = 0; i<=4; i++) {
         row = NumberOfCards /13;
         column = NumberOfCards % 13;
-        PokerHand[i] = deck[row][column];
+        pokerHandOfPlayer[i] = deck[row][column];
         NumberOfCards = NumberOfCards -1;
     }
 
-    return *PokerHand;
+
 }
 
 void showHand(int pokerHandOfPlayer[5], const char *suit[], const char *face[]){
@@ -88,13 +100,53 @@ void showHand(int pokerHandOfPlayer[5], const char *suit[], const char *face[]){
     int cardColumn;
     printf("\nHere is hand of Player 1\n");
 
-    for (row = 1; row<= 5; row++){
+    for (row = 0; row<= 4; row++){
             card = pokerHandOfPlayer[row];
             cardRow = card/13;
-            cardColumn = card%4;
+            cardColumn = card%13;
             printf("%5s of %-8s \n", face[cardColumn], suit[cardRow]);
     }
 
 }
+
+void isTherePair(int pokerHandOfPlayer[5]){
+    int card, pairCounter = 0;
+    int row;
+    int cardColumn[5];
+
+    for (row = 0; row<= 4; row++){
+        card = pokerHandOfPlayer[row];
+        cardColumn[row] = card%13;}
+
+    for (row = 4; row >=1 ;row --){
+        for (int instantCard = row - 1 ; instantCard >= 0 ; instantCard --){
+                if (cardColumn[row] == cardColumn[instantCard]) {
+                    pairCounter = pairCounter + 1;
+                }
+        }
+    }
+    printf("There are %d pairs", pairCounter);
+}
+
+void isThereKinds(int pokerHandOfPlayer[5]){
+    int card, kindCounter = 0;
+    int row;
+    int cardColumn[5];
+
+    for (row = 0; row<= 4; row++){
+        card = pokerHandOfPlayer[row];
+        cardColumn[row] = card%13;}
+
+    for (row = 4; row >=1 ;row --){
+        for (int instantCard = row - 1 ; instantCard >= 0 ; instantCard --){
+            if (cardColumn[row] == cardColumn[instantCard]) {
+                kindCounter = kindCounter + 1;
+            }
+        }
+    }
+
+}
+void isThereFlush(int pokerHandOfPlayer[5]){}
+void isThereStraight(int pokerHandOfPlayer[5]){}
 
 
