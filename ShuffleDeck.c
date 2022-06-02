@@ -22,7 +22,7 @@ int NumberOfCards = 51;
 
 void main(void){
 
-    void (*evaluationFunctions)(int) = {isTherePair, isThereKinds, isThereFlush, isThereStraight};
+    void (*evaluationFunctions[4])(int ) = {isTherePair, isThereKinds, isThereFlush, isThereStraight};
 
     const char *suit[] = {"Hearts", "Diamonds", "Clubs", "Spades"};
     const char *face[] = {"Ace", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine",
@@ -30,6 +30,7 @@ void main(void){
 
     int deck[4][13] = {0};
     int pokerHandOfPlayerOne[5] ={0};
+    int functionCounter ;
 
 
     UpdateTimeSeed();
@@ -39,7 +40,12 @@ void main(void){
     givePokerHand(deck, pokerHandOfPlayerOne);
     showHand(pokerHandOfPlayerOne, suit, face);
 
-    isTherePair(pokerHandOfPlayerOne);
+    for (functionCounter = 0; functionCounter <3 ; functionCounter ++){
+
+        (*evaluationFunctions[functionCounter])(pokerHandOfPlayerOne);
+    }
+
+
 
 }
 
@@ -122,14 +128,15 @@ void isTherePair(int pokerHandOfPlayer[5]){
         for (int instantCard = row - 1 ; instantCard >= 0 ; instantCard --){
                 if (cardColumn[row] == cardColumn[instantCard]) {
                     pairCounter = pairCounter + 1;
+                    break;
                 }
         }
     }
-    printf("There are %d pairs", pairCounter);
+    printf("There are %d pairs \n", pairCounter);
 }
 
 void isThereKinds(int pokerHandOfPlayer[5]){
-    int card, kindCounter = 0;
+    int card, kindCounter = 1;
     int row;
     int cardColumn[5];
 
@@ -141,12 +148,48 @@ void isThereKinds(int pokerHandOfPlayer[5]){
         for (int instantCard = row - 1 ; instantCard >= 0 ; instantCard --){
             if (cardColumn[row] == cardColumn[instantCard]) {
                 kindCounter = kindCounter + 1;
+                if (kindCounter >= 3){
+                    printf("There is a %d of a kind\n", kindCounter);
+                    break;
+                }
+                else{
+                    printf("There is no kinds\n");
+                }
             }
+
+            kindCounter = 1;
         }
     }
 
 }
-void isThereFlush(int pokerHandOfPlayer[5]){}
-void isThereStraight(int pokerHandOfPlayer[5]){}
+
+void isThereFlush(int pokerHandOfPlayer[5]){
+    int card, counter = 0;
+    int row;
+    int cardRow[5];
+
+    for (row = 0; row<= 4; row++){
+        card = pokerHandOfPlayer[row];
+        cardRow[row] = card/13;
+    }
+    for (int instantCard = row - 1 ; instantCard >= 0 ; instantCard --){
+        if (cardRow[row] == cardRow[instantCard]){
+            counter = counter + 1;
+        }
+    }
+    if (counter == 4){
+        printf("There is a Flush\n");
+    }
+    else{
+        printf("There is no Flush\n");
+    }
+
+}
+
+void isThereStraight(int pokerHandOfPlayer[5]){
+
+
+
+}
 
 
